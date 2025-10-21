@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Contato</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>💬 Fale Conosco</h1>
+    <p>Preencha o formulário abaixo e envie suas informações.</p>
+  </header>
+
+  <main>
+    <form id="formContato" action="processa.php" method="POST">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div id="resposta"></div>
+  </main>
+
+  <footer>
+    <p>Desenvolvido na aula de Back-End 💻</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
